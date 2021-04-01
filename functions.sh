@@ -61,7 +61,7 @@ get_version()
        WHEN POSITION('HAWQ' IN version) = 0 AND POSITION('Greenplum Database 5' IN version) > 0
          THEN 'gpdb_5'
        WHEN POSITION('HAWQ' IN version) = 0 AND POSITION('Greenplum Database 6' IN version) > 0
-         THEN 'gpdb_5'
+         THEN 'gpdb_6'
        ELSE 'OTHER' END
 FROM version()
 ;")
